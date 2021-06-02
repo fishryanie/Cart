@@ -1,0 +1,81 @@
+.phone{
+    .phone_content{
+        max-width: 1200px;
+        margin:10px auto;
+        border-radius: 50px;
+        padding: 20px 0px;
+        .phone_title{
+            padding: 10px 20px;
+            color: #000;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .phone_manufacturer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            margin: 20px;
+            img{width: 100%;}
+        }
+        .phone_row{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            .phone_item {
+                border: 1px solid rgb(220, 220, 220);
+                padding: 30px 10px;
+                margin: 10px;
+                border-radius: 20px;
+                .phone_item_row1{
+                    position: relative;
+                    .promotion {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        font-size: 10px;
+                        color: #FFF;
+                        text-align: left;
+                        span{background: #ea9d02;border-radius: 5px; padding: 5px; margin: 5px;}
+                        p{background: #cb1c22;border-radius: 5px; padding: 5px;margin: 5px;}
+                    }
+                }
+                .phone_item_row2{
+                    display: flex; justify-content: space-between;
+                    margin: 10px 0px;
+                    span{
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: red;
+                        padding: 5px;
+                    }
+                    i{font-size: 40px; cursor: pointer; color: rgb(177, 17, 70);}
+                }
+            }
+            .phone_item:hover{
+                img{
+                    transform: translateY(-5%);
+                    transition: all 0.3s linear;
+                }
+                box-shadow: 0.5px 0.5px 3px 3px rgb(221, 221, 221);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .phone{
+        .phone_content{
+            .phone_row{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px){
+    .phone{
+        padding: 0px 10px;
+        .phone_content{
+            .phone_row{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+

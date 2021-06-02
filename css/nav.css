@@ -1,0 +1,181 @@
+nav .content {
+  max-width: 1280px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+nav .content .nav_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+nav .content .nav_contact i {
+  font-size: 30px;
+}
+
+nav .content .nav_contact a {
+  color: #fff;
+}
+
+nav .content .nav_contact a i {
+  font-size: 50px;
+}
+
+nav .content .nav_contact span {
+  padding: 0px 5px;
+  border-right: 1px solid #fff;
+  margin: 0px 10px;
+}
+
+nav .content .nav_contact form input {
+  visibility: hidden;
+  opacity: 0;
+  border: none;
+  outline: none;
+  width: 0px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  -webkit-transition: 0.3s linear all;
+  transition: 0.3s linear all;
+}
+
+nav .content .logo {
+  margin-left: 50px;
+}
+
+nav .content .trangchu {
+  margin: 0px auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 10;
+}
+
+nav .content .trangchu li {
+  list-style: none;
+  padding: 10px 0px;
+}
+
+nav .content .trangchu li a {
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+  display: block;
+}
+
+nav .content .trangchu li .menu {
+  min-width: 230px;
+  min-height: 130px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  display: none;
+}
+
+nav .content .trangchu li .menu li {
+  list-style: none;
+  position: relative;
+}
+
+nav .content .trangchu li .menu li a {
+  text-decoration: none;
+  display: block;
+  font-size: 20;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #faf3f3;
+}
+
+nav .content .trangchu li:hover .menu {
+  display: block;
+}
+
+.btnMenu {
+  background: none;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  display: none;
+  outline: none;
+}
+
+.menu-signin .A:hover .sign-in {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .trangchu .user {
+    right: 25px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .content .trangchu {
+    position: absolute !important;
+    top: -50% !important;
+    left: 0 !important;
+    background: rgba(0, 0, 0, 0.6);
+    display: block !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 100%;
+    padding: 30px 0px !important;
+  }
+  .content .trangchu li a {
+    padding: 0px 50px !important;
+    font-size: 20px !important;
+    color: #fff !important;
+  }
+  .content .trangchu li .menu {
+    position: relative !important;
+    left: 70px !important;
+    text-align: left !important;
+  }
+  .content .trangchu li .menu li {
+    border: none !important;
+  }
+  .content .trangchu li .menu li a {
+    font-size: 18px !important;
+  }
+  .btnMenu {
+    display: block;
+  }
+  .btnMenu i {
+    font-size: 40px !important;
+  }
+}
+
+.action {
+  all: none;
+}
+
+.action .content .trangchu {
+  visibility: visible !important;
+  opacity: 1 !important;
+  top: 0 !important;
+  -webkit-transition: 1s ease-in-out !important;
+  transition: 1s ease-in-out !important;
+}
+/*# sourceMappingURL=nav.css.map */

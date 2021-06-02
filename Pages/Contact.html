@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conta</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <style>
+        nav{background: rgba(0, 0, 0, 0.7);border-radius: 0px 0px 100px 100px;}
+        nav .content{align-items: center !important; }
+        nav .menu{background: rgba(0, 0, 0, 0.6); margin-top:12px ; border-radius: 10px;}
+        h1{font-size: 40px; margin: 20px 0px;}
+        .contact{max-width: 1200px; margin: auto;}
+        .contact_row1{padding: 10px 100px; text-align: center;}
+        .contact_row2{display: grid; grid-template-columns: 1fr 1fr;}
+        .contact_phone , .contact_local{text-align: center; padding: 20px ;}
+        .contact_phone > i{padding: 30px 40px;border-radius: 80%; background: #EDEDED; font-size: 50px; cursor: pointer;}
+        .contact_local i {padding: 30px ;border-radius: 80%; background: #EDEDED; font-size: 50px; cursor: pointer;}
+        .form_head{display: grid; grid-template-columns: 1fr 1fr; margin-bottom: -20px;}
+        .form_head input, .form_body input , textarea {width: 100%; padding:10px; }
+        .form_head > div , .form_body > div {margin: 20px;}
+        button{padding: 10px 20px; margin-bottom: 50px; margin-left: 20px;}
+
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <section class="content">
+            <div class="logo">
+                <img src="../img/09ad22a6e5df41528589a0cc9be5bd4b.png" width="70%" alt="">
+            </div>
+            <div>
+                <div class="nav_contact text-right">
+                    <i class='bx bxs-phone-call'></i>
+                    <span>0979955925</span>
+                    <form action="">
+                        <input type="text" placeholder="Search" id="Search">
+                    </form>
+                    <i class='bx bx-search-alt-2 mx-2'  id="btnSearch"></i>
+                    <a href="../Pages/Cart.html"><i class='bx bxs-cart-add' ></i></a>
+                    <button class="btnMenu"><i class='bx bx-menu mx-2'></i></button>
+                </div>
+                <ul class="trangchu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Pages/Introduce.html">Introduce</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="./Pages/Contact.html">Contact</a></li>
+                    <li style="position: relative;"><a href="">Login<i class='bx bx-caret-down ml-2' ></i></a>
+                        <ul class="menu">
+                            <li><a id="dangnhap">User<i class='bx bxs-user ml-2' ></i></a></li>
+                            <li><a href="registration.html">Sign In</a></li>
+                            <li><a href="">Admin</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"></i>Product<i class='bx bx-caret-down ml-2' ></i></a>
+                        <ul class="menu">
+                            <li><a href="#">Máy tính<i class="fa fa-laptop ml-2"></i></a></li>
+                            <li><a href="#phone">Điện thoại di động<i class="fa fa-mobile-alt ml-2"></i></a></li>
+                            <li><a href="#">Máy tính bảng<i class="fa fa-tablet-alt ml-2"></i></a></li>
+                            <li><a href="#">Đồng hồ<i class='bx bxs-watch-alt ml-2'></i></a></li>
+                            <li><a href="">Máy chụp ảnh<i class="fa fa-camera ml-2"></i></a></li>
+                            <li><a href="#">Tai nghe<i class="fa fa-headphones ml-2"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </nav>
+    <!-- // ========================== Contact ===========================> -->
+    <article>
+        <section class="contact">
+            <div class="contact_row1">
+                <h1>Contact Us</h1>
+                <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta.</p>
+            </div>
+            <div class="contact_row2">
+                <div class="col_1">
+                    <div class="contact_phone">
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>+211234565523</p>
+                        <p>quanphps14761@fpt.edu.vn</p>
+                    </div>
+                    <div class="contact_local">
+                        <i class="fas fa-map-marked-alt" id="map"></i>
+                        <p id="demo">9567 Turner Trace Apt.466 North Willie, BC C3G8A4</p>
+                    </div>
+                </div>
+
+                <div class="col_2" id="mapholder">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16114.798744626447!2d106.63199893325374!3d10.846894307519634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1616563359070!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="contact_row3">
+                <form action="">
+                    <h1>Drop us a mail</h1>
+                    <div class="form_head">
+                        <div><input type="text" placeholder="Full name"></div>
+                        <div><input type="text"placeholder="Phone number"></div>
+                    </div>
+                    <div class="form_body">
+                        <div><input type="text" placeholder="Email"></div>
+                        <div><textarea name="" id="" cols="30" rows="10" placeholder="Your messages"></textarea></div>
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </section>
+    </article>
+
+    <!-- // ========================== Footer ===========================> -->
+    <footer>
+        <div class="footer__content">
+            <div class="footer__row">
+                <div class="footer__col aboutUS">
+                    <h1>About Us</h1>
+                    <div class="footer__item1">
+                        <p>ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla</p>
+                        <span>ultricies nec, pellentesque eu, pretium quis, sem. Nulla</span>
+                    </div>
+                </div>
+
+                <div class="footer__col Working_time">
+                    <h1>Working time</h1>
+                    <div class="footer__item2">
+                        <div class="footer__item__day">
+                            <p>MonDay</p>
+                            <p>9:30-18:30</p>
+                        </div>
+                    </div>
+
+                    <div class="footer__item2">
+                        <div class="footer__item__day">
+                            <p>TusDay</p>
+                            <p>9:30-18:30</p>
+                        </div>
+                    </div>
+                    <div class="footer__item2">
+                        <div class="footer__item__day">
+                            <p>Wednesday</p>
+                            <p>9:30-18:30</p>
+                        </div>
+                    </div>
+                    <div class="footer__item2">
+                        <div class="footer__item__day">
+                            <p>FriDay</p>
+                            <p>9:30-18:30</p>
+                        </div>
+                    </div>
+                    <div class="footer__item2">
+                        <div class="footer__item__day">
+                            <p>MonDay</p>
+                            <p>9:30-18:30</p>
+                        </div>
+                    </div>
+                    <div class="footer__item2">
+                        <div class="footer__item__day">
+                            <p>Satuday</p>
+                            <p>9:30-18:30</p>
+                        </div>
+                    </div>
+                    <div class="footer__item2">
+                        <div class="footer__item__day">
+                            <p>SunDay</p>
+                            <p>9:30-18:30</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__col TwitterUS">
+                    <h1>Twitter Us</h1>
+                    <div class="footer__item3">
+                        <p>ultricies nec, pellentesque eu, pretium quis,</p>
+                        <p>ultricies nec, pellentesque eu, pretium quis,</p>
+                        <p>ultricies nec, pellentesque eu, pretium quis,</p>
+                        <p>ultricies nec, pellentesque eu, </p>
+                    </div>
+                </div>
+
+                <div class="footer__col SUBSCRIBE ">
+					<h1>SUBSCRIBE US</h1>
+					<div>
+						<form action="">
+							<input type="email" placeholder="abc@email.com">
+							<button type="button">Send</button>
+						</form>
+						<p>Ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla</p>
+					</div>
+				</div>
+            </div>
+            <div class="last">
+                © 2021 Store. All Rights Reserved | Design by <span>Ryan Phan</span>
+            </div>
+        </div>
+	</footer>
+
+    <!-- // ========================== Form ==============================> -->
+    <section id="login">
+        <div class="content__form" id="content__form">
+            <div class="container col-8 pt-2 ">
+                <div class="d-flex mb-5">
+                    <span id="btn-login"> Đăng nhập</span>
+                    <span id="btn-dangki">Đăng kí</span>
+                </div>
+                <form action="" id = "form">
+                    <div class="form-group mt-3">
+                        <div class="row">
+                            <div class="col">
+                                <div class="txt"><label for="">Tên</label><span id="nameError"></span></div>
+                                <input type="text" class="form-control" placeholder="First name" aria-label="First name"id = "name">
+                            </div>
+                            <div class="col">
+                                <div class="txt"><label for="">Họ</label><span id="lastNameError"></span></div>
+                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id ="lastName">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <div class="txt"><label for="">Địa Chỉ</label><span id="txtDiaChi"></span></div>
+                                <input type="text" class="form-control" placeholder="address" id="address" >
+                            </div>
+                            <div class="col">
+                                <div class="txt"><label for="">Ngày sinh</label><span id="txtBirthDay"></span></div>
+                                <input type="date" class="form-control" id="birthDay">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="txt"><label for="">Email address</label><span id="txtEmail"></span></div>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" >
+                    </div>
+
+                    <div class="form-group">
+                        <div class="txt">
+                            <label for="exampleInputPassword1">Password</label>
+                            <span id="txtPass"></span>
+                        </div>
+                    <input type="password" class="form-control input" id="pass" >
+                    </div>
+
+                    <div class="form-group">
+                        <div class="txt">
+                            <label for="exampleInputPassword1">Nhập lại password</label>
+                            <span id="txtPassAgain"></span>
+                        </div>
+                        <input type="password" class="form-control" id="passAgain" >
+                    </div>
+
+                    <div class="form-group">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <label for="">Giới tính</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadioInline1">Nam</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadioInline2">Nữ</label>
+                        </div>
+                    </div>
+
+                <div class="form-group submit mt-5">
+                        <button type="button" class="btn btn-success" id="btnSub">Đăng kí</button>
+                        <button type="reset" class="btn btn-info">Reset</button>
+                        <button type="button" class="btn btn-secondary" id="exit">Đóng</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- // ========================== Thông báo ===========================> -->
+    <section id="thongBao"></section>
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="../js/map.js"></script>
+</body>
+</html>

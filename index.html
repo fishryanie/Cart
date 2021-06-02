@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Watch</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="" , initial-scale="1.0" />
+	<!-- =========================== My css =================================> -->
+	<link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/phone.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/Accessories.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<!-- =========================== Icon tiêu đề ==============================> -->
+	<link rel="icon" type="image/png" href="./img/121694945_341020066996777_4947055243269391391_n.png" />
+	<!-- ===========================Thư viện icon  =================================> -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+<!-- // ========================== Carousel ===========================> -->
+	<section class="carousel">
+        <nav id="nav">
+            <section class="content">
+                <div class="logo">
+                    <img class="animate__animated animate__backInRight" src="./img/09ad22a6e5df41528589a0cc9be5bd4b.png" alt="">
+                </div>
+                <div>
+                    <div class="nav_contact text-right">
+                        <i class='bx bxs-phone-call'></i>
+                        <span>0979955925</span>
+                        <form action="">
+                            <input type="text" placeholder="Search" id="Search">
+                        </form>
+                        <i class='bx bx-search-alt-2 mx-2'  id="btnSearch"></i>
+                        <a href="./Pages/Cart.html"><i class='bx bxs-cart-add' ></i></a>
+                        <button class="btnMenu"><i class='bx bx-menu mx-2'></i></button>
+                    </div>
+                    <ul class="trangchu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./Pages/Introduce.html">Introduce</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="./Pages/Contact.html">Contact</a></li>
+                        <li style="position: relative;"><a href="">Login<i class='bx bx-caret-down ml-2' ></i></a>
+                            <ul class="menu">
+                                <li><a id="dangnhap">User<i class='bx bxs-user ml-2' ></i></a></li>
+                                <li><a href="registration.html">Sign In</a></li>
+                                <li><a href="">Admin</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"></i>Product<i class='bx bx-caret-down ml-2' ></i></a>
+                            <ul class="menu">
+                                <li><a href="#">Máy tính<i class="fa fa-laptop ml-2"></i></a></li>
+                                <li><a href="#phone">Điện thoại di động<i class="fa fa-mobile-alt ml-2"></i></a></li>
+                                <li><a href="#">Máy tính bảng<i class="fa fa-tablet-alt ml-2"></i></a></li>
+                                <li><a href="#">Đồng hồ<i class='bx bxs-watch-alt ml-2'></i></a></li>
+                                <li><a href="">Máy chụp ảnh<i class="fa fa-camera ml-2"></i></a></li>
+                                <li><a href="#">Tai nghe<i class="fa fa-headphones ml-2"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </nav>
+
+        <div class="content_carousel">
+            <div class="carousel_title">
+                <h1>FLEX-STORE</h1>
+                <p>Là chuỗi chuyên bán lẻ các sản phẩm kỹ thuật số di động bao gồm điện thoại di động, máy tính bảng, laptop, phụ kiện và dịch vụ công nghệ…
+                <p>Luôn đặt khách hàng làm trung tâm trong mọi suy nghĩ và hành động, Shop đã xây dựng được một đội ngũ nhân viên với phong cách làm việc chuyên nghiệp, nhiệt tình và tận tâm với khách hàng</p></p>
+                <button class="px-5 text-light p-2"><i class='bx bxs-cart-download mr-3' ></i>Mua Ngay</button>
+            </div>
+            <div class="img_carousel "><img class="imgCarousel" src="img/Apple-Watch-black.png" /></div>
+        </div>
+	</section>
+
+    <div class="carousel_content2">
+        <div class="carousel_content_item2">
+            <div style="position: relative;">
+                <div class="rotate3D_font">
+                    <i class="fas fa-store-alt"></i>
+                    <h2>Shop</h2>
+                    <p>Cửa hàng trên toàn quốc</p>
+                    <span id = "document_shop">1200</span>
+                </div>
+                <div class="rotate3D_back">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            <div style="position: relative;">
+                <div class="rotate3D_font">
+                    <i class="fab fa-amazon-pay"></i>
+                    <h2>Revenue</h2>
+                    <p>Tổng doanh thu 2020</p>
+                    <span id = "document_revenue">1200</span>
+                </div>
+                <div class="rotate3D_back"><canvas id="myChart"></canvas></div>
+            </div>
+            <div>
+                <div class="rotate3D_font">
+                    <i class="fas fa-users"></i>
+                    <h2>Personal</h2>
+                    <p>Nhân sự</p>
+                    <span id = "document_personal">1200</span>
+                </div>
+                <div class="rotate3D_back"><canvas id="myChart"></canvas></div>
+
+            </div>
+            <div>
+                <div class="rotate3D_font">
+                    <i class="fas fa-handshake"></i>
+                    <h2>Business partner</h2>
+                    <p>Đối tác làm ăn</p>
+                    <span id = "document_partner">1200</span>
+                </div>
+                <div class="rotate3D_back"><canvas id="myChart"></canvas></div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- // ========================== Phone  ===========================> -->
+    <section class="phone" id="phone">
+        <div class="phone_content">
+            <div class="phone_title pt-3"><h4 style="text-shadow: 1px 1px 1px pink;"><i class="fas fa-mobile-alt mx-2"></i>Điện thoại nổi bật</h4></div>
+            <div class="phone_manufacturer">
+                <div><img src="./img/iPhone-(Apple)42-b_52.jpeg" alt=""></div>
+                <div><img src="./img/Samsung42-b_25.jpeg" alt=""></div>
+                <div><img src="./img/OPPO42-b_5.jpeg" alt=""></div>
+                <div><img src="./img/Xiaomi42-b_45.jpeg" alt=""></div>
+                <div><img src="./img/Nokia42-b_21.jpeg" alt=""></div>
+                <div><img src="./img/Huawei42-b_30.jpeg" alt=""></div>
+                <div><img src="./img/Vivo42-b_50.jpeg" alt=""></div>
+            </div>
+            <div class="phone_row"></div>
+            </div>
+        </div>
+    </section>
+
+<!-- // ========================== Watch ===========================> -->
+    <section class="watch">
+        <div class="watch_content">
+            <div class="watch_title pt-3"><h4 style="text-shadow: 1px 1px 1px pink;"><i class='bx bxs-watch'></i>Đồng hồ nổi bật</h4></div>
+            <div class="watch_row"></div>
+        </div>
+    </section>
+
+    <section class="bannerFooter">
+        <div><img src="./img/800-300-800x300-25.png" width="100%" alt=""></div>
+        <div><img src="./img/800-300-800x300-6.png" width="100%" alt=""></div>
+    </section>
+
+    <!-- // ========================== Accessories ===========================> -->
+    <section class="accessories">
+        <div class="accessories_content">
+            <div class="accessories_title"><h3>PHỤ KIỆN HOT</h3></div>
+            <div class="row_accessories"></div>
+        </div>
+    </section>
+
+	<!-- // ========================== Footer =============================> -->
+	<footer>
+        <div class="footer__content">
+            <div class="footer__row">
+                <div class="footer__col aboutUS">
+                    <h1>About Us</h1>
+                    <div class="footer__item1">
+                        <p>ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla</p>
+                        <span>ultricies nec, pellentesque eu, pretium quis, sem. Nulla</span>
+                    </div>
+                </div>
+
+                <div class="footer__col Working_time">
+                    <h1>Working time</h1>
+                    <div class="footer__item2">
+                        <div class="footer__item__day">
+                            <p>MonDay</p>
+                            <p>9:30-18:30</p>
+                        </div>
+                    </div>
+
+                    <div class="footer__item2">
+                        <div class="footer__item__day">
+                            <p>TusDay</p>
+                            <p>9:30-18:30</p>
+                        </div>
+                    </div>
+                    <div class="footer__item2">
+                        <div class="footer__item__day">
+                            <p>Wednesday</p>
+                            <p>9:30-18:30</p>
+                        </div>
+                    </div>
+                    <div class="footer__item2">
+                        <div class="footer__item__day">
+                            <p>FriDay</p>
+                            <p>9:30-18:30</p>
+                        </div>
+                    </div>
+                    <div class="footer__item2">
+                        <div class="footer__item__day">
+                            <p>MonDay</p>
+                            <p>9:30-18:30</p>
+                        </div>
+                    </div>
+                    <div class="footer__item2">
+                        <div class="footer__item__day">
+                            <p>Satuday</p>
+                            <p>9:30-18:30</p>
+                        </div>
+                    </div>
+                    <div class="footer__item2">
+                        <div class="footer__item__day">
+                            <p>SunDay</p>
+                            <p>9:30-18:30</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__col TwitterUS">
+                    <h1>Twitter Us</h1>
+                    <div class="footer__item3">
+                        <p>ultricies nec, pellentesque eu, pretium quis,</p>
+                        <p>ultricies nec, pellentesque eu, pretium quis,</p>
+                        <p>ultricies nec, pellentesque eu, pretium quis,</p>
+                        <p>ultricies nec, pellentesque eu, </p>
+                    </div>
+                </div>
+
+                <div class="footer__col SUBSCRIBE ">
+					<h1>SUBSCRIBE US</h1>
+					<div>
+						<form action="">
+							<input type="email" placeholder="abc@email.com">
+							<button type="button">Send</button>
+						</form>
+						<p>Ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla</p>
+					</div>
+				</div>
+            </div>
+            <div class="last">
+                © 2021 Store. All Rights Reserved | Design by <span>Ryan Phan</span>
+            </div>
+        </div>
+	</footer>
+
+    	<!-- // ========================== Form ===========================> -->
+    <section id="login">
+		<div class="content__form" id="content__form">
+			<div class="container col-8 pt-2 ">
+				<div class="d-flex mb-5">
+					<span id="btn-login"> Đăng nhập</span>
+					<span id="btn-dangki">Đăng kí</span>
+				</div>
+				<form action="" id = "form">
+					<div class="form-group mt-3">
+						<div class="row">
+							<div class="col">
+								<div class="txt"><label for="">Tên</label><span id="nameError"></span></div>
+								<input type="text" class="form-control" placeholder="First name" aria-label="First name"id = "name">
+							</div>
+							<div class="col">
+								<div class="txt"><label for="">Họ</label><span id="lastNameError"></span></div>
+								<input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id ="lastName">
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="row">
+							<div class="col">
+								<div class="txt"><label for="">Địa Chỉ</label><span id="txtDiaChi"></span></div>
+								<input type="text" class="form-control" placeholder="address" id="address" >
+							</div>
+							<div class="col">
+								<div class="txt"><label for="">Ngày sinh</label><span id="txtBirthDay"></span></div>
+								<input type="date" class="form-control" id="birthDay">
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="txt"><label for="">Email address</label><span id="txtEmail"></span></div>
+						<input type="email" class="form-control" id="email" aria-describedby="emailHelp" >
+					</div>
+
+					<div class="form-group">
+						<div class="txt">
+							<label for="exampleInputPassword1">Password</label>
+							<span id="txtPass"></span>
+						</div>
+					<input type="password" class="form-control input" id="pass" >
+					</div>
+
+					<div class="form-group">
+						<div class="txt">
+							<label for="exampleInputPassword1">Nhập lại password</label>
+							<span id="txtPassAgain"></span>
+						</div>
+						<input type="password" class="form-control" id="passAgain" >
+					</div>
+
+					<div class="form-group">
+						<div class="custom-control custom-radio custom-control-inline">
+							<label for="">Giới tính</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+							<label class="custom-control-label" for="customRadioInline1">Nam</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+							<label class="custom-control-label" for="customRadioInline2">Nữ</label>
+						</div>
+					</div>
+
+				<div class="form-group submit mt-5">
+						<button type="button" class="btn btn-success" id="btnSub">Đăng kí</button>
+						<button type="reset" class="btn btn-info">Reset</button>
+						<button type="button" class="btn btn-secondary" id="exit">Đóng</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+    <!-- // ========================== Thông báo ===========================> -->
+    <section id="thongBao"></section>
+
+	<!-- // ========================== My javaScript ===========================> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<script src="./js/validator.js"></script>
+	<script src="./js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="module" src="./js/getProduct.js"></script>
+</body>
+</html>

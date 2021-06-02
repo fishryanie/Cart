@@ -1,0 +1,18 @@
+[
+    {"icon":"<i class='fas fa-medal'></i>","name":"Phụ kiện nổi bật"},
+    {"icon":"<i class='fas fa-sd-card'></i>","name":"Bao da ốp lưng"},
+    {"icon":"<i class='bx bxs-battery-charging'></i>","name":"Sạc dự phòng"},
+    {"icon":"<i class='fas fa-sd-card'></i>","name":"Thẻ nhớ"},
+    {"icon":"<i class='fab fa-apple'></i>","name":"Phụ kiện apple"},
+    {"icon":"<i class='fas fa-mobile'></i>","name":"Màn hình"},
+    {"icon":"<i class='fas fa-headphones-alt'></i>","name":"Tai nghe"},
+    {"icon":"<i class='fas fa-retweet-alt'></i>","name":"Phụ kiện nổi bật"},
+    {"icon":"<i class='bx bxs-volume-full'></i>","name":"Loa"},
+    {"icon":"<i class='fas fa-hdd'></i>","name":"Ổ cứng"},
+    {"icon":"<i class='fal fa-charging-station'></i>","name":"Dây sạc"},
+    {"icon":"<i class='fas fa-mouse'></i>","name":"Chuột"},
+    {"icon":"<i class='fas fa-keyboard'></i>","name":"Bàn phím"},
+    {"icon":"<i class='bx bxs-backpack'></i>","name":"Balo - Túi xách"},
+    {"icon":"<i class='fas fa-tv'></i>","name":"TV Box"},
+    {"icon":"<i class='bx bx-dots-horizontal-rounded'></i>","name":"Phụ kiện khác"}
+]

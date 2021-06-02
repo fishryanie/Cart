@@ -1,0 +1,118 @@
+.phone .phone_content {
+  max-width: 1200px;
+  margin: 10px auto;
+  border-radius: 50px;
+  padding: 20px 0px;
+}
+
+.phone .phone_content .phone_title {
+  padding: 10px 20px;
+  color: #000;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.phone .phone_content .phone_manufacturer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 20px;
+}
+
+.phone .phone_content .phone_manufacturer img {
+  width: 100%;
+}
+
+.phone .phone_content .phone_row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.phone .phone_content .phone_row .phone_item {
+  border: 1px solid gainsboro;
+  padding: 30px 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.phone .phone_content .phone_row .phone_item .phone_item_row1 {
+  position: relative;
+}
+
+.phone .phone_content .phone_row .phone_item .phone_item_row1 .promotion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 10px;
+  color: #FFF;
+  text-align: left;
+}
+
+.phone .phone_content .phone_row .phone_item .phone_item_row1 .promotion span {
+  background: #ea9d02;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.phone .phone_content .phone_row .phone_item .phone_item_row1 .promotion p {
+  background: #cb1c22;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.phone .phone_content .phone_row .phone_item .phone_item_row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.phone .phone_content .phone_row .phone_item .phone_item_row2 span {
+  font-weight: 700;
+  font-size: 16px;
+  color: red;
+  padding: 5px;
+}
+
+.phone .phone_content .phone_row .phone_item .phone_item_row2 i {
+  font-size: 40px;
+  cursor: pointer;
+  color: #b11146;
+}
+
+.phone .phone_content .phone_row .phone_item:hover {
+  -webkit-box-shadow: 0.5px 0.5px 3px 3px #dddddd;
+          box-shadow: 0.5px 0.5px 3px 3px #dddddd;
+}
+
+.phone .phone_content .phone_row .phone_item:hover img {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+@media screen and (max-width: 1200px) {
+  .phone .phone_content .phone_row {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .phone {
+    padding: 0px 10px;
+  }
+  .phone .phone_content .phone_row {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=phone.css.map */

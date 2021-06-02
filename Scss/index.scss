@@ -1,0 +1,119 @@
+* {margin: 0px; padding: 0px; box-sizing: border-box;}
+body{ font-family:'Times New Roman', Times, serif}
+.carousel_content2{
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+    top: -70px;
+    .carousel_content_item2{
+        background: #FFF;
+        border-radius: 10px;
+        box-shadow: 0.5px .05px 2px 2px rgb(220, 220, 220);
+        position: relative;
+        max-width: 1200px;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        div{
+            text-align: center;
+            padding: 30px 20px;
+            i{font-size: 40px; padding: 20px 0px;}
+            span{font-size: 50px;}
+            background: #FFF;
+        }
+        .rotate3D_back{
+            position: absolute;
+            padding: 30px 20px;
+            top: 0;
+            visibility: hidden;
+            background: #FFF;
+            canvas{
+                animation: 1s;
+                transform: rotateY(180deg);
+            }
+        }
+
+        div:hover {
+            .rotate3D_font{
+                transform: rotateY(180deg);  transition: 1s all; visibility: hidden; opacity: 0;
+            }
+            .rotate3D_back{
+                transform: rotateY(180deg);  transition: 1s all; visibility: visible; opacity: 1;
+            }
+        }
+    }
+}
+
+.bannerFooter{
+   max-width: 1200px;
+   margin:50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#login{
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0,0, 0.4);
+    .content__form{
+        width: 750px;
+        height: 700px;
+        background-color: #FFF;
+        box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+        border-radius: 10px;
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        form{
+            width: 700px;
+            min-height: 600px;
+            border-radius: 10px;
+            margin: 2% auto;
+            background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+            padding: 2%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,5%);
+            .submit{text-align: right;}
+            .txt{
+                display: flex;
+                justify-content: space-between;
+                label{
+                    font-size: 15px;
+                    font-style: italic;
+                    margin-top: -10;
+                    text-align: right;
+                }
+                span{color: red;}
+            }
+        }
+        .d-flex{
+            text-align: center;
+            width: 600px;
+            margin: auto;
+            #btn-login ,#btn-dangki{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 35px;
+                color: #000;
+                border: none;
+                background-color: none;
+                outline: none;
+                margin:0px 50px ;
+            }
+        }
+    }
+}
+
+
+
+
+
+

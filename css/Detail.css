@@ -1,0 +1,31 @@
+#addToCart, #price, .capacity, table, tr, h1 {
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+}
+
+#price {
+  font-size: 50px;
+  color: blue;
+  margin-top: -50px;
+}
+
+#feature1 {
+  -webkit-transform: translate(310%, 800%);
+          transform: translate(310%, 800%);
+}
+
+#feature2 {
+  -webkit-transform: translate(350%, 670%);
+          transform: translate(350%, 670%);
+}
+
+#feature3 {
+  -webkit-transform: translate(400%, 550%);
+          transform: translate(400%, 550%);
+}
+
+#feature4 {
+  -webkit-transform: translate(500%, 450%);
+          transform: translate(500%, 450%);
+}
+/*# sourceMappingURL=Detail.css.map */

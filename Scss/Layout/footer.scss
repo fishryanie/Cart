@@ -1,0 +1,115 @@
+footer{
+    display: block;
+    margin-top:10px ;
+    background: rgba(0, 0,0,0.9);
+    .footer__content{
+        max-width: 1200px;
+        margin: auto;
+        z-index: 5;
+        .footer__row{
+            display: flex;
+            justify-content: space-around;
+            .footer__col{
+                color: rgb(249, 249, 250);
+                width:25%;
+                padding: 30px 20px;
+                h1{color: #e83e8c; font-weight: 400; margin-bottom: 10px;}
+                p {margin-bottom: 20px;}
+                .footer__item__day{
+                    display: flex; justify-content:space-between;
+                    border-bottom: #FFF 1px dotted;
+                    p{margin: 5px 0px;}
+                }
+                input {
+                    max-width: 100%;
+                    padding:  8px 20px;
+                    display: block;
+                }
+                button {
+                    padding: 10px 35px;
+                    margin: 10px 0px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: #e83e8c;
+                    font-weight: 600 ;
+                    font-size: 18px;
+                    display: block;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.last{
+    color: rgb(2, 138, 250);
+    text-align: center;
+    padding-bottom: 30px;
+    span {
+        color: #e83e8c;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    footer{
+        .footer__content{
+            .footer__row{
+                display: block;
+                .aboutUS{
+                    text-align: center;
+                    width: 100%;
+                }
+                .Working_time{
+                    float: left;
+                    margin-left: 20px;
+                    margin-bottom: 10px;
+                    width: 50%;
+                }
+                .TwitterUS{
+                    width: 40%;
+                    margin-top: 7px;
+                    float: right;
+                    margin-bottom: 42px;
+                    .footer__item3{
+                        margin-top: 40px;
+                    }
+                }
+                .SUBSCRIBE{
+                    margin-right: 20px;
+                    text-align: center;
+                    width: 100%;
+                    form{
+                        display: flex;
+                        justify-content: space-around;
+                        input{
+                            margin: auto;
+                            width: 70%;
+                            padding: 5px;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    footer{
+        .footer__content{
+            .footer__row{
+                text-align: center;
+                .Working_time{
+                    float: none;
+                    margin: 0px;
+                    width: 100%;
+                }
+                .TwitterUS{width: 100%;}
+                .SUBSCRIBE{
+                    button{padding: 5px 25px;}
+                }
+            }
+        }
+    }
+}

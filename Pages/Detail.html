@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/Animation.css">
+    <link rel="stylesheet" href="../css/Detail.css">
+    <style>
+        * {padding: 0;margin: 0;box-sizing: border-box; font-family: 'Times New Roman', Times, serif}
+        .detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100vh;
+            background-image: linear-gradient(to bottom, pink, palevioletred,rgb(83, 6, 32));
+            overflow: hidden;
+        }
+
+        .col_1 {padding: 50px;text-align: center}
+        .detail_information{padding: 20px 0px;}
+        .detail_information h1 {font-size: 40px;}
+        th, td { border-bottom: 1px solid black; border-collapse: collapse; }
+        th, td {padding:12px 10px;}
+        .feature{display: grid; grid-template-columns: 1fr ;margin: 10px -80px; padding: 10px 30px;}
+        .feature div {margin: 10px 0px;}
+        .feature i {font-size: 40px;padding: 10px;}
+
+        .col_2 {
+            background-color: #FFF;
+            border-radius: 0px 0px 0px 100%;
+            padding: 30px;
+            overflow: hidden;
+        }
+
+        .detail_carousel {
+            max-width: 400px;
+            max-width: 500px;
+            margin: 20px auto;
+            text-align: center;
+            display: flex;
+            transform: translateX(120%);
+            transition: 1s;
+        }
+
+        .detail_carousel img {
+            max-width: 500px;
+            padding: 10px 50px;
+            margin: 0px 50px;
+        }
+
+        .detail_img {
+            transform: translateX(35%);
+        }
+
+        .detail_img img {
+            transform: translateX(500px);
+        }
+
+        .detail_img img {
+            max-width: 70px;
+            box-shadow: 0.5px 0.5px 3px 3px rgb(221, 221, 221);
+            padding: 10px;
+            margin: 30px 10px;
+            border-radius: 10px !important;
+        }
+
+        .capacity{display: grid; grid-template-columns: 1fr 1fr 1fr; margin: 20px 0px; }
+        .capacity div {padding: 10px 30px; background: rgba(0,0,0,0.5); color:#fff;}
+        .capacity input {margin: 0px 5px;}
+        .addToCart {
+            padding: 15px 70px;
+            font-size: 30px;
+            border: none;
+            border-radius: 30px;
+            color: #FFF;
+            background: linear-gradient(to right,rgb(21, 114, 255),rgb(241, 34, 103));
+        }
+
+        @media screen and (max-width: 992px) {
+            .detail {display: grid; grid-template-columns: 1fr;}
+            .col_2 {border-radius: 0px;}
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <article>
+        <section class="detail">
+            <section class="col_1">
+                <div style="display: flex; justify-content: space-between;">
+                    <!-- ======================== Information =========================> -->
+                    <div class="detail_information">
+                        <h1>Thông Tin Sản Phẩm</h1>
+                        <table class="table">
+                            <tr><td>Màn hình</td><td>6.7", QHD+, Dynamic AMOLED 2X, 1440 x 3200 Pixel</td></tr>
+                            <tr><td>Camera sau</td><td>12.0 MP + 12.0 MP + 64.0 MP + 0.5 MP</td></tr>
+                            <tr><td>Camera Selfie</td><td>10.0 MP</td></tr>
+                            <tr><td>RAM </td><td>8 GB</td></tr>
+                            <tr><td>Bộ nhớ trong</td><td>128 GB</td></tr>
+                            <tr><td>CPU</td><td>Exynos 990</td></tr>
+                            <tr><td>Dung lượng pin</td><td>4500 mAh</td></tr>
+                            <tr><td>Hệ điều hành</td><td>Android 10.0</td></tr>
+                            <tr><td>Thẻ sim</td><td>2, 2 Nano SIM hoặc 1 eSIM, 1 Nano SIM</td></tr>
+                        </table>
+                    </div>
+                    <!-- ========================= Featurn ============================> -->
+                    <div class="feature">
+                        <div id="feature1">
+                            <i class="far fa-images"></i>
+                            <p>Xem thêm tất cả ảnh</p>
+                        </div>
+                        <div id="feature2">
+                            <i class="fab fa-youtube"></i>
+                            <p>Video trên tay</p>
+                        </div>
+                        <div id= "feature3">
+                            <i class='bx bx-box' ></i>
+                            <p>Có gi trong hộp</p>
+                        </div>
+                        <div id="feature4">
+                            <i class="fas fa-undo-alt"></i>
+                            <p>Ảnh 360 độ</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ============================ Price  ============================> -->
+                <div id="price"> 30.000.000đ</div>
+
+                <!-- =========================== Capacity ============================> -->
+                <div class="capacity">
+                    <div>
+                        <input type="radio" id="64gb" name = "capacity">
+                        <span>64GB</span>
+                        <p>21.490.000đ</p>
+                    </div>
+                    <div>
+                        <input type="radio" id="128gb" name = "capacity">
+                        <span>128GB</span>
+                        <p>23.490.000đ</p>
+                    </div>
+                    <div>
+                        <input type="radio" id="256gb" name = "capacity" >
+                        <span>256GB</span>
+                        <p>24.990.000đ</p>
+                    </div>
+                </div>
+                <div id="addToCart">
+                    <button class="addToCart">Add To Cart</button>
+                </div>
+            </section>
+
+            <section class="col_2">
+                <div class="detail_carousel" id="detail_carousel">
+                    <img src="../img/iphone-12-xanh-duong-new-600x600-600x600.jpeg" alt="">
+                    <img src="../img/iphone-12-trang-new-600x600-600x600.jpeg" alt="">
+                    <img src="../img/iphone-23-mini-den-new-600x600-600x600.jpeg" alt="">
+                    <img src="../img/iphone-mini-do-new-600x600-600x600.jpeg" alt="">
+                </div>
+                <div class="detail_img">
+                    <img src="../img/iphone-12-xanh-duong-new-600x600-600x600.jpeg" alt="" id="img1">
+                    <img src="../img/iphone-12-trang-new-600x600-600x600.jpeg" alt="">
+                    <img src="../img/iphone-23-mini-den-new-600x600-600x600.jpeg" alt="">
+                    <img src="../img/iphone-mini-do-new-600x600-600x600.jpeg" alt="">
+                </div>
+            </section>
+        </section>
+    </article>
+    <script src="../js/Detail.js"></script>
+</body>
+</html>

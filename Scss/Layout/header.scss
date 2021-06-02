@@ -1,0 +1,94 @@
+// ========================== Header ===========================>
+header {
+    background-image: linear-gradient(to bottom, pink, palevioletred);
+    .header_content {
+        max-width: 1200px;
+        margin: auto;
+        .head_row {
+        margin: 0px auto;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .head__item {
+            width: 10%;
+            display: flex;
+            input {
+                width: 600px;
+                padding: 5px 20px;
+                margin: 3px 50px;
+                font-size: 20px;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                background-color: #fff;
+            }
+        }
+        .head__cart {
+            display: flex;
+            color: #fff;
+            padding: 0px 20px;
+            a{text-decoration: none; color: #fff;}
+            i{padding: 0px 10px; font-size: 30px;}
+            button{display: none;}
+        }
+    }
+  }
+}
+
+@media screen and (max-width:992px){
+    .head__item form input { width: 400px !important;}
+    .head__cart {
+        button {
+            margin-left: 20px;
+            border: none;
+            background: none;
+            display: block !important; }
+    }
+}
+
+@media screen and (max-width:768px){
+    .head_row{align-items: flex-start !important;}
+    .head__item{
+        display: block !important;
+        form{margin-top: 10px;
+            input{
+                width: 500px !important;
+                margin: 0px 20px !important;}
+        }
+    }
+    .head__cart{display: flex; justify-content: space-between; align-items: flex-start; padding: 0px !important;
+        a{padding: 10px;}
+        .menuIcon {
+            display: block !important;
+            border: none;
+            background: none;
+            padding: 10px;
+            i {
+                color: #fff;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px){
+    .head__cart{
+        button{i{font-size: 25px !important;}}
+        a{
+            font-size: 15px;
+            i{font-size: 20px !important;}
+        }
+    }
+    .head__item{
+        img{margin-left: 30px;}
+        form{margin-top: 10px;
+            input{
+                margin: 0px !important;
+                padding: 5px 20px !important;
+                width: 460px !important;
+                font-size: 12px !important;
+            }
+        }
+    }
+}

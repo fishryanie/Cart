@@ -1,0 +1,141 @@
+footer {
+  display: block;
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+footer .footer__content {
+  max-width: 1200px;
+  margin: auto;
+  z-index: 5;
+}
+
+footer .footer__content .footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer__content .footer__row .footer__col {
+  color: #f9f9fa;
+  width: 25%;
+  padding: 30px 20px;
+}
+
+footer .footer__content .footer__row .footer__col h1 {
+  color: #e83e8c;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+footer .footer__content .footer__row .footer__col p {
+  margin-bottom: 20px;
+}
+
+footer .footer__content .footer__row .footer__col .footer__item__day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: #FFF 1px dotted;
+}
+
+footer .footer__content .footer__row .footer__col .footer__item__day p {
+  margin: 5px 0px;
+}
+
+footer .footer__content .footer__row .footer__col input {
+  max-width: 100%;
+  padding: 8px 20px;
+  display: block;
+}
+
+footer .footer__content .footer__row .footer__col button {
+  padding: 10px 35px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  border: none;
+  background-color: #e83e8c;
+  font-weight: 600;
+  font-size: 18px;
+  display: block;
+  outline: none;
+  cursor: pointer;
+}
+
+.last {
+  color: #028afa;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.last span {
+  color: #e83e8c;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  footer .footer__content .footer__row {
+    display: block;
+  }
+  footer .footer__content .footer__row .aboutUS {
+    text-align: center;
+    width: 100%;
+  }
+  footer .footer__content .footer__row .Working_time {
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+  footer .footer__content .footer__row .TwitterUS {
+    width: 40%;
+    margin-top: 7px;
+    float: right;
+    margin-bottom: 42px;
+  }
+  footer .footer__content .footer__row .TwitterUS .footer__item3 {
+    margin-top: 40px;
+  }
+  footer .footer__content .footer__row .SUBSCRIBE {
+    margin-right: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  footer .footer__content .footer__row .SUBSCRIBE form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer .footer__content .footer__row .SUBSCRIBE form input {
+    margin: auto;
+    width: 70%;
+    padding: 5px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer__content .footer__row {
+    text-align: center;
+  }
+  footer .footer__content .footer__row .Working_time {
+    float: none;
+    margin: 0px;
+    width: 100%;
+  }
+  footer .footer__content .footer__row .TwitterUS {
+    width: 100%;
+  }
+  footer .footer__content .footer__row .SUBSCRIBE button {
+    padding: 5px 25px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

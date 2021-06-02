@@ -1,0 +1,81 @@
+// ========================== Carousel ===========================>
+.carousel {
+    background-image: linear-gradient(150deg, pink, palevioletred,rgb(83, 6, 32));
+    .content_carousel{
+        overflow: hidden;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px 10px 100px 10px;
+        .carousel_title{
+            color: #fff;
+            font-size: 20px;
+            padding: 20px;
+            h1{font-size: 60px;}
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            button{
+                font-size: 30px;background: linear-gradient(to right,rgb(21, 114, 255),rgb(241, 34, 103));border: none; border-radius: 20px;
+            }
+        }
+        .img_carousel{
+           transform: translateX(25%);
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .carousel{
+        button{
+            padding: 10px !important;
+            width: 75% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 992px){
+    .carousel{
+        .carousel_title{
+            color: #fff;
+            font-size: 18px !important;
+            padding: 10px !important;
+            h1{font-size: 50px !important;}
+            button{
+                padding: 10px !important;
+                font-size: 25px !important;
+                width: 100% !important;
+            }
+        }
+        .img_carousel{
+            transform: translateX(10%) !important;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .carousel{
+        .content_carousel{
+            grid-template-columns: 1fr !important;
+            .carousel_title{
+                text-align: center;
+            }
+            .img_carousel{
+                transform: translateX(20%) !important;
+            }
+        }
+        button{
+            padding: 10px !important;
+            font-size: 25px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .carousel{
+        .content_carousel{
+            .img_carousel{
+                transform: translateX(10%) !important;
+             }
+        }
+    }
+}

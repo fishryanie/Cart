@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Cart</title>
+    <style>
+        *{padding: 0;margin: 0;box-sizing: border-box; font-family: 'Times New Roman', Times, serif;}
+        .cart{max-width: 1280px;margin: auto;display: flex; padding: 50px 10px;}
+        .cart_content_1{width: 70%;padding: 0px 30px 0px 0px;}
+        .cart_title {display: grid; grid-template-columns: 1fr 1fr; line-height: 40px; margin-bottom: 50px;}
+        .cart_title h1 {font-size: 50px;}
+        .cart_title input {width: 100%; border-radius:20px;border: 1px solid rgb(220 , 220, 220); padding: 0px 20px; outline: none; height: 40px;}
+        table { border-spacing: 0px;}
+        #tableDanhSach{text-align: center; }
+        #tableDanhSach tr, td{border-bottom: 1px solid rgb(220 , 220, 220); padding: 10px 0px;}
+        td i {font-size: 25px; margin: 0px 10px; cursor: pointer;}
+        .imgCart{width:20%;}
+        .nameCart{width: 35%;}
+        .qualityCart{width: 20%;}
+        .qualityCart span {margin: 0px 10px;}
+
+        .totalPrice{display: grid; grid-template-columns: 1fr 1fr;}
+        .sumPrice div{display: flex; justify-content: space-between; margin: 15px; font-size: 20px; }
+        .ToTal{padding: 20px 0px;font-size: 25px ; border-top: 1px solid rgb(220 , 220, 220);}
+        .ToTal span {font-size: 35px;}
+        .btn_comeback{padding: 15px 35px; font-size: 20px; border-radius: 20px; border: 1px solid rgb(220 , 220, 220); text-decoration: none;}
+        .btn_comeback i {padding: 0px 10px;}
+
+        .cart_content_2{width: 30%;background: #1E2738;color: #fff;padding: 20px; border-radius: 10px;}
+        .cart_content_2 > h1 {font-size: 50px; margin: -20px 0px 20px 0px}
+        .btn_pay{display: flex;padding: 10px 0px;}
+        .btn_pay button{border: 1px solid #fff; border-radius: 40px; margin: 5px; padding:10px; width: 50%; background: none; color: #fff; display: flex;align-items: center;}
+        .btn_pay button i {font-size: 20px; padding: 0px 10px;}
+        .nameOnCart , .cardNumber, .expiration{margin: 30px 0px; border-bottom: 1px solid rgb(220 , 220, 220);}
+        .nameOnCart form , .cardNumber form, .expiration form{margin-right: 40px;}
+        label { display: block;}
+        .nameOnCart input, .cardNumber input, .expiration input{width: 100%;  padding:20px; background: none; border: none; color: #fff; outline: none;}
+        .expiration input {width: 15%; color: #fff;}
+        .payNow{border-radius: 40px; padding: 15px 20px; width: 100%; border: none; outline: none; font-size: 25px; background: linear-gradient(to right,rgb(21, 114, 255),rgb(241, 34, 103)); color: #fff;}
+    </style>
+</head>
+<body>
+    <article>
+        <section class="cart">
+            <div class="cart_content_1">
+                <div class="cart_title">
+                    <h1>Shopping Cart</h1>
+                    <div style="display: flex;align-items: center; position: relative;">
+                        <input type="text" placeholder="Search" id="searchCart">
+                        <i class='bx bx-search' style="font-size: 25px; position: absolute; right: 15px; color: gray"></i>
+                    </div>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Total Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id ="tableDanhSach"></tbody>
+                </table>
+
+                <div class="totalPrice">
+                    <div style="text-align: center; display: flex; margin: auto;"><a href="../index.html" class="btn_comeback"><i class="fas fa-chevron-left"></i>Continue shopping</a></div>
+                    <div class="sumPrice">
+                        <div>
+                            <strong>Subtotal:</strong>
+                            <span id="sumProduct">123</span>
+                        </div>
+                        <div>
+                            <strong>Shipping:</strong>
+                            <span id="ship">213</span>
+                        </div>
+                        <div class="ToTal">
+                            <strong>ToTal:</strong>
+                            <span id="sumPay">123</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="cart_content_2">
+                <h1>Pay Info</h1>
+                <p>Payment method</p>
+                <div class="btn_pay">
+                    <button><i class="fab fa-cc-visa"></i><span>Creadit cart</span></button>
+                    <button><i class="fas fa-coins"></i><span>PayPal</span></button>
+                </div>
+
+                <div class="nameOnCart">
+                    <form action="">
+                        <label for="">Name On Cart</label>
+                        <input type="text" placeholder="Phan Hồng Quân">
+                    </form>
+                </div>
+                <div class="cardNumber">
+                    <form action="">
+                        <label for="">Card Number</label>
+                        <input type="text" placeholder="****  ****  ****  9961">
+                    </form>
+                </div>
+                <div class="expiration">
+                    <form action="">
+                        <label for="">Expiration date</label>
+                        <input type="date" placeholder="MM" >
+                        <input type="date" placeholder="DD">
+                    </form>
+                </div>
+                <button class="payNow">Pay Now</button>
+            </div>
+        </section>
+    </article>
+    <script type = "module" src="../js/getProduct.js"></script>
+</body>
+</html>

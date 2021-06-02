@@ -1,0 +1,52 @@
+.imgCarousel {
+  -webkit-animation: bobbingAnim 1s linear infinite;
+          animation: bobbingAnim 1s linear infinite;
+}
+
+.detail_carousel {
+  -webkit-animation: detail_carousel 1s infinite linear;
+          animation: detail_carousel 1s infinite linear;
+}
+
+@-webkit-keyframes bobbingAnim {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  50% {
+    -webkit-transform: translate(0px, 20px);
+            transform: translate(0px, 20px);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes bobbingAnim {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  50% {
+    -webkit-transform: translate(0px, 20px);
+            transform: translate(0px, 20px);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+}
+/*# sourceMappingURL=Animation.css.map */

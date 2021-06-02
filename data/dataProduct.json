@@ -1,0 +1,170 @@
+[
+    {
+        "id": "W1",
+        "name": "Vòng đeo tay thông minh Mi Band",
+        "img": "../img/watch10.jpg",
+        "imageColor": "",
+        "price": 690000,
+        "amount":1,
+        "Brand": "watch",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? "
+    },
+    {
+        "id": "W2",
+        "name": "Apple Watch SE GPS 40mm",
+        "img": "../img/watch2.jpg",
+        "imageColor": "",
+        "price": 20000,
+        "amount":1,
+        "Brand": "watch",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? "
+    },
+    {
+        "id": "W3",
+        "name": "Apple Watch SE GPS + Cellular 44mm",
+        "img": "../img/watch3.jpg",
+        "imageColor": "",
+        "price": 300000,
+        "amount":1,
+        "Brand": "watch",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? "
+    },
+    {
+        "id": "W4",
+        "name": "Apple Watch S6 40mm viền nhôm dây cao su (Product RED)",
+        "img": "../img/watch.jpg",
+        "imageColor": "",
+        "price": 12990000,
+        "Brand": "watch",
+        "amount":1,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? "
+    },
+    {
+        "id": "W5",
+        "name": "Đồng hồ thông minh Huami Amazfit GTS",
+        "img": "../img/watch7.jpg",
+        "imageColor": "",
+        "price":2541000,
+        "Brand": "watch",
+        "amount":1,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? "
+    },
+    {
+        "id": "W6",
+        "name": "Đồng hồ thông minh Huami Amazfit T-Rex Đen",
+        "img": "../img/xiaomi-amazfit-t-rex-400x400.jpeg",
+        "imageColor": "",
+        "price": 2804000,
+        "Brand": "watch",
+        "amount":1,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? "
+    },
+    {
+        "id": "W7",
+        "name": "Đồng hồ thông minh Garmin Fenix 6 dây silicone viền Titanium",
+        "img": "../img/garmin-fenix-6-day-silicone-_thum2-400x400.jpeg",
+        "imageColor": "",
+        "price": 22490000,
+        "Brand": "watch",
+        "amount":1,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? "
+    },
+    {
+        "id": "W8",
+        "name": "Đồng hồ thông minh Suunto 9 Dây silicone",
+        "img": "../img/suunto-9-day-silicon-xanh-la-thum-400x400.jpeg",
+        "imageColor": "",
+        "price": 13100000,
+        "Brand": "watch",
+        "amount":1,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? "
+    },
+    {
+        "id": "P1",
+        "name": "Ip12 Pro 256GB",
+         "img": "../img/iphone-12-pro-xam-new-600x600-600x600.jpeg",
+        "imageColor": "",
+        "price": 30990000,
+        "brand": "Iphone",
+        "type":"phone",
+        "amount":1,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? "
+    },
+    {
+        "id": "P2",
+        "name": "Samsung Galaxy S21 5G",
+        "img": "../img/samsung-galaxy-s21-tim-600x600-600x600.jpeg",
+        "imageColor": "",
+        "price": 20990000,
+        "brand": "Iphone",
+        "amount":1,
+        "type":"phone",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? "
+    },
+    {
+        "id": "P3",
+        "name": "Ip11 128GB",
+        "img": "../img/iphone-11-xanhla-600x600-1-600x600.jpeg",
+        "imageColor": "",
+        "price": 30990000,
+        "brand": "Iphone",
+        "amount":1,
+        "type":"phone",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? "
+    },
+    {
+        "id": "P4",
+        "name": "ViVo V19 Neo",
+        "img": "../img/vivo-v19-neo-den-600x600.jpeg",
+        "imageColor": "",
+        "price": 30990000,
+        "brand": "Iphone",
+        "amount":1,
+        "type":"phone",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? "
+    },
+    {
+        "id": "P5",
+        "name": "Samsung Galaxy Note 20",
+        "img": "../img/samsung-galaxy-note-20-xanh-new-600x600.jpeg",
+        "imageColor": "",
+        "price": 30990000,
+        "amount":1,
+        "brand": "Iphone",
+        "type":"phone",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? "
+    },
+    {
+        "id": "P6",
+        "name": "iphone 12 mini 64GB ",
+        "img": "../img/iphone-mini-do-new-600x600-600x600.jpeg",
+        "imageColor": "",
+        "price": 30990000,
+        "amount":1,
+        "brand": "Iphone",
+        "type":"phone",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? "
+    },
+    {
+        "id": "P7",
+        "name": " OPPO Reno4 Pro",
+        "img": "../img/oppo-reno4-pro-trang-600x600.jpeg",
+        "imageColor": "",
+        "price": 30990000,
+        "amount":1,
+        "brand": "Iphone",
+        "type":"phone",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? "
+    },
+    {
+        "id": "P8",
+        "name": "Samsung Galaxy Note 20 Ultra 5G",
+        "img": "../img/sam-sung-note-20-ultra-vang-dong-600x600.jpeg",
+        "imageColor": "",
+        "price": 30990000,
+        "amount":1,
+        "brand": "Iphone",
+        "type":"phone",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea voluptates officiis? "
+    }
+]
